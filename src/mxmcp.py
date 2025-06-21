@@ -37,37 +37,38 @@ async def search_email(
             description="Set the 'query' parameter to the text as written by the user. ONLY alter the request if the user explicitly asks for a specific email AND you have its msgId.")],
 ) -> str:
     """
-    Search request for emails from multiple email accounts.
+Search request for emails from multiple email accounts.
 
-    Args:
-        query (str):
-            Set the 'query' parameter to a phrase that best describes the user's request'.
-            Try to preserve the original sentence as much as possible. Be sure to include
-            aspects that relate to the email subject, sender, recipients, dates, etc.
-            Preserve or use words like, From, To, etc. Include any date ranges if applicable.
-            ONLY alter the request if the user explicitly asks for a specific email
-            AND you have its msgId. In this case refer to the notes below.
+Args:
+	query (str):
+		Set the 'query' parameter to a search sentence reflecting the user's request.
+		The sentence should be a specific and concise full sentence. Be sure to include
+		aspects that relate to the email subject, sender, recipients, dates, etc.
+		Use words like, From, To, etc. Include any date ranges if applicable.
+		If the user explicitly asks for a specific email AND you have its msgId,
+		refer to the notes below.
 
-    return:
-        str:
-            This function will return details about the search results plus a list of emails that match the user's request - if any.
+Returns:
 
-        Each email entry returned is a JSON object with the following fields:
-        - content: the email content
-        - subject: the email subject
-        - from: the email sender
-        - to: the email recipient
-        - date: the email date
-        - msgId: the email id
-        - link: a URL to view the email
+	This function will return details about the search results plus
+	a list of emails that match the user's request - if any.
 
-    Notes:
-        - When the user requests a specific email and you have the msgId, indicate and use the msgId in your request or simply provide the link, if you have it.
-        - Only assume the user is asking about their own email if they EXPLICITLY IMPLY it in the query.
-        - Always share the link to the email with the user.
-        - If the user is requesting a "summary" (or similar) of a specific email, include the word "summary" in the query argument sentence.
-        - If the user's question is statistical in nature, like, how many emails, or how many emails were sent in a specific month, include the word "statistical" in the query argument sentence.'
-        - If searching for related emails, include the word "related" in the query argument sentence and be sure to use information from the original email like the From, To, Subject, etc. when formulating successive queries.
+	Each email entry returned is a JSON object with the following fields:
+	- content: the email content
+	- subject: the email subject
+	- from: the email sender
+	- to: the email recipient
+	- date: the email date
+	- msgId: the email id
+	- link: a URL to view the email
+
+Notes:
+	- When the user requests a specific email and you have the msgId, indicate and use the msgId in your request or simply provide the link, if you have it.
+	- Only assume the user is asking about their own email if they EXPLICITLY IMPLY it in the query.
+	- Always share the link to the email with the user.
+	- If the user is requesting a "summary" (or similar) of a specific email, include the word "summary" in the query argument sentence.
+	- If the user's question is statistical in nature, like, how many emails, or how many emails were sent in a specific month, include the word "statistical" in the query argument sentence.'
+	- If searching for related emails, include the word "related" in the query argument sentence and be sure to use information from the original email like the From, To, Subject, etc. when formulating successive queries.
     """
 
     try:
