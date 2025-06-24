@@ -95,6 +95,7 @@ uv --directory /fullpath/PycharmProjects/mxmcp-py run src/mxmcp.py --token "my_t
     ```
    
    ...or use your favorite json editor.
+    * You may need to create the file if it does not already exist.
 
 
 2. Add the configuration:
