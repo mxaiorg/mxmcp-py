@@ -100,7 +100,7 @@ uv --directory /fullpath/PycharmProjects/mxmcp-py run src/mxmcp.py --token "my_t
 
 2. Add the configuration:
 
-* Replace the --directory parameter with the absolute (full) path to the python script.
+* Replace the --directory argument value ('/Users/...') with the absolute (full) path to the python script.
 
     ```json
     {
