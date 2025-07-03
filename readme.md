@@ -86,6 +86,8 @@ To start the MCP server, run the following command:
 uv --directory /fullpath/PycharmProjects/mxmcp-py run src/mxmcp.py --token "my_token"
 ```
 
+Typically you don't need to start the server, your client will do it, but it is useful to make sure things are working.
+
 ### Using Claude as the client
 
 1. Edit your `claude_desktop_config.json`:
@@ -111,7 +113,9 @@ uv --directory /fullpath/PycharmProjects/mxmcp-py run src/mxmcp.py --token "my_t
                     "--directory",
                     "/Users/your_user/Desktop/mxmcp-py",
                     "run",
-                    "src/mcp_server_box.py"
+                    "src/mcp_server_box.py",
+                    "--token",
+                    "<copy_your_token_here>"
                 ]
             }
         }
