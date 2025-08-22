@@ -132,7 +132,7 @@ Typically you don't need to start the server, your client will do it, but it is 
                     "--directory",
                     "/Users/your_user/Desktop/mxmcp-py",
                     "run",
-                    "src/mcp_server_box.py",
+                    "src/mxmcp.py",
                     "--token",
                     "<copy_your_token_here>"
                 ]
