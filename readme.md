@@ -1,8 +1,8 @@
-# MCP Server for mxHERO Mail2Cloud Advanced Multi-Account Email Search
+# MCP Server for mxHERO Multi-Account Email Search
 
 ## Description
 
-This MCP (model context protocol) server is a Python project that provides access to mxHERO's multi-account email search service.
+This MCP (model context protocol) server is a Python project that provides access to mxHERO's Mail2Cloud Advanced multi-account email search service.
 
 The Model Context Protocol (MCP) is a framework designed to standardize the way models interact with various data sources and services. In this project, MCP is used to facilitate seamless integration to mxHERO Mail2Cloud Advanced. Mail2Cloud Advanced is a high performance data service for a company's email data. Mail2Cloud Advanced connects to company email services and optimizes the content for fast, scalable and secure access by AI solutions. 
 
