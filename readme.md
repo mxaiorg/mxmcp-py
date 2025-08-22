@@ -26,8 +26,7 @@ A Go version (plus prebuilt binaries) can be found [here](https://github.com/mxa
 
 ### Streamable HTTP
 This MCP repo is the 'stdio' variant. HTTP options exist at the following addresses:
-* [https://lab4-api.mxhero.com/mcp/connect](https://lab4-api.mxhero.com/mcp/connect)
-(streamable HTTP)
+* [https://lab4-api.mxhero.com/mcp/connect](https://lab4-api.mxhero.com/mcp/connect) (streamable HTTP)
 * [https://lab4-api.mxhero.com/mcp/sse](https://lab4-api.mxhero.com/mcp/sse) (Legacy SSE)
 
 
