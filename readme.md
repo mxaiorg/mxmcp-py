@@ -1,4 +1,4 @@
-# MCP Server for mxHERO Multi-Account Email Search
+# MCP Server for mxHERO Mail2Cloud Advanced Multi-Account Email Search
 
 ## Description
 
