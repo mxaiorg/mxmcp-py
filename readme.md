@@ -18,6 +18,8 @@ Solutions built with Mail2Cloud Advanced MCP outperforms other AI solutions with
 
 To facilitate exploration of this MCP, mxHERO provides demo accounts that are pre-loaded with thousands of emails. More about the demo emails can be found [here](https://mxhero.helpjuice.com/en_US/mxhero-ai/demo-account-for-ai-testing).
 
+> See 'Access Tokens' below to get a token.
+
 For more information see: [mxHERO Mail2Cloud Advanced](https://www.mxhero.com/advanced-ai) multi-email account service, including [architecture](https://mxhero.helpjuice.com/en_US/mxhero-ai/mxmcp#architecture-8), and optimizations.
 
 ## Alternate versions
